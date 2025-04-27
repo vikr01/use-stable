@@ -13,7 +13,7 @@ This hook is meant for cases that are not pure, usually when the return is a poi
 API is the same as `useMemo`.
 
 ```js
-import useStable from 'use-stable'
+import useStable from 'react-use-stable'
 
 function useMyCustomHook(socket) {
     const socket = useStable(()=>new WebSocket(`wss://example.com/${socket}`), [socket]);
