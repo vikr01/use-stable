@@ -1,0 +1,29 @@
+{
+    // This config is ONLY for type-checking actual source code in packages
+    // It is NOT used for any typescript files not in src/
+  
+    "extends": "@tsconfig/recommended",
+  
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "declaration": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "jsx": "react-jsx"
+    },
+  
+    "include": [
+      "src"
+    ],
+  
+    "exclude": [
+      "node_modules",
+      "dist",
+      "src/**/__tests__",
+    ],
+  }
+  
