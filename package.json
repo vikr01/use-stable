@@ -1,7 +1,11 @@
 {
   "name": "react-use-stable",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./builder": "./dist/builder/index.js"
+  },
   "scripts": {
     "build": "tsc && npm run copy-files",
     "copy-files": "copyfiles -u 1 \"src/**/*.{json,html,css}\" \"!src/**/__tests__/**/*\" dist",
